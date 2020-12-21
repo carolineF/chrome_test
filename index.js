@@ -12,7 +12,7 @@ let driver = new webdriver.Builder()
 driver.get('https://www.baidu.com')
 
 driver.findElement(By.id('kw')).then(searchInput => {
-    searchInput.sendKeys('钻戒')
+    searchInput.sendKeys('test')
     driver.findElement(By.id('su')).then(submitBtn => {
         submitBtn.click();
     })
